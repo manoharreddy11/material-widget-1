@@ -1,1 +1,29 @@
-# material-widget-1
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.blue, 
+      child: Center(
+        child: Text(
+          'Hello, Material Widget!',
+          style: TextStyle(color: Colors.white, fontSize: 24.0),
+        ),
+      ),
+    );
+  }
+}
